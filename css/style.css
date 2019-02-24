@@ -77,6 +77,10 @@ body {
     list-style-type: none;
 }
 
+.list {
+    text-align: center;
+}
+
 .list a {
     text-decoration: none;
     margin: 20px;
@@ -85,6 +89,7 @@ body {
 
 p {
     margin: 10px;
+    text-align: center;
 }
 
 .info {
@@ -94,4 +99,9 @@ p {
 img {
     display: block;
     margin: auto auto 40px;
+}
+
+.centered {
+    display: block;
+    text-align: center;
 }
