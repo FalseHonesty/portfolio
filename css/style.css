@@ -73,12 +73,9 @@ body {
     text-align: center;
 }
 
-.boring {
-    list-style-type: none;
-}
-
 .list {
     text-align: center;
+    list-style-type: none;
 }
 
 .list a {
