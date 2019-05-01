@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-US">
+
+<!-- 
+  The Content Page of the website.
+  Includes media files.
+  by Glen Salyer
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Glen's Portfolio - Content</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <span>Glen Salyer</span>
+
+        <ul id="navbar-links">
+            <li><a href="index.html">Home Page</a></li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <section id="content">
+        <div id="media" class="page">
+
+            <h1>Canvas</h1>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+            <p>This is an HTML canvas drawing of the Diver Flag, because I love diving!</p>
+
+            <h1>SVG</h1>
+            <object data="kotlin.svg" type="image/svg+xml" width="100">
+                <p>Kotlin Logo</p>
+            </object>
+
+            <p>This is an SVG drawing of the Kotlin Logo, as it is my favorite language!</p>
+
+            <h1>Audio</h1>
+            <audio controls>
+                <source src="http://audio.simplecast.com/3d329a9e.mp3" type="audio/mpeg">
+                Sorry, but your browser doesn't support HTML5 audio.
+            </audio>
+
+            <p>This audio is from an awesome programming podcast. This episode features a web developer who produces great tutorials.</p>
+
+            <h1>Video</h1>
+            <video width="320" height="240" controls>
+                <source src="factorio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>This video is the trailer for one of my favorite games, Factorio! Factorio is a great game for the programmer mind.</p>
+        </div>
+    </section>
+
+    <script src="js/canvas.js"></script>
+</body>
+
+</html>
