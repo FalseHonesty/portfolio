@@ -84,9 +84,13 @@ body {
     display: block;
 }
 
-p {
+p, h1, label {
     margin: 10px;
     text-align: center;
+}
+
+input {
+    margin: auto;
 }
 
 .info {
@@ -100,5 +104,9 @@ img {
 
 .centered {
     display: block;
+    text-align: center;
+}
+
+#caesar {
     text-align: center;
 }

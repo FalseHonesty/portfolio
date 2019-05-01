@@ -1,74 +1,100 @@
 <!doctype html>
-<html lang=en>
+<html lang="en-US">
+
 <head>
-    <meta charset=utf-8>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/caesar.js"></script>
     <title>Glen's Portfolio</title>
 </head>
+
 <body>
-<nav class="navbar">
-    <span>Glen Salyer</span>
+    <nav class="navbar">
+        <span>Glen Salyer</span>
 
-    <ul id="navbar-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#intro">Intro</a></li>
-    </ul>
-</nav>
-
-<section id="content">
-    <div id="intro" class="page">
-        <h1 class="header">Glen Salyer</h1>
-
-        <p class="info">Hi! My name is Glen, and I have been interested in software for as long as I can remember.
-        I particularly enjoy working on desktop based applications, but I have experimented elsewhere! I mainly
-        develop in JVM-based languages, and my current favorite language is Kotlin (which you should check out by the
-        way!).</p>
-
-        <br>
-
-        <p class="info">In addition to doing computer-y things, I enjoy a nice book, a long fishing trip, and most of all,
-        scuba diving. I have not been a diver for a long time, but I sure have enjoyed every minute underneath the waves.</p>
-    </div>
-
-    <div id="about" class="page">
-        <h1 class="header">About</h1>
-
-        <h3 class="subtitle">Education</h3>
-
-        <p>I am currently attending Florida Gulf Coast University and I am majoring in Software Engineering.</p>
-
-        <img src="https://www.fgcu.edu/_resources/images/logo-blue@2x.png" alt="FGCU Logo"/>
-
-        <h3 class="subtitle">Accomplishments</h3>
-
-        <ul class="list">
-            <li>FGCU President's List Fall 2018</li>
-            <li>Perfect Score on High School Biology EOC</li>
-            <li>2nd Place at City of Palms Model United Nations Conference</li>
+        <ul id="navbar-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#intro">Intro</a></li>
         </ul>
+    </nav>
 
-        <h3 class="subtitle">Computer Science Classes I Have Taken</h3>
+    <section id="content">
+        <div id="intro" class="page">
+            <h1 class="header">Glen Salyer</h1>
 
-        <ul class="list">
-            <li>Intro to Computer Science (COP 1500)</li>
-        </ul>
-    </div>
+            <p class="info">Hi! My name is Glen, and I have been interested in software for as long as I can remember. I particularly enjoy working on desktop based applications, but I have experimented elsewhere! I mainly develop in JVM-based languages, and my current favorite language is Kotlin (which you should check out by the way!).
+            </p>
 
-    <div id="projects" class="page">
-        <h1 class="header">Projects</h1>
+            <br>
 
+            <p class="info">In addition to doing computer-y things, I enjoy a nice book, a long fishing trip, and most of all, scuba diving. I have not been a diver for a long time, but I sure have enjoyed every minute underneath the waves.</p>
+        </div>
 
-        <h3 class="subtitle">My Favorite Projects</h3>
+        <div id="about" class="page">
+            <h1 class="header">About</h1>
 
-        <a href="https://github.com/FalseHonesty/AoC2018" target="_blank" class="centered">Advent of Code 2018 Solutions</a>
-        <a href="https://github.com/FalseHonesty/HackerRank" target="_blank" class="centered">HackerRank Solutions</a>
+            <h3 class="subtitle">Education</h3>
 
-        <h3 class="subtitle">My Profiles</h3>
+            <p>I am currently attending Florida Gulf Coast University and I am majoring in Software Engineering.</p>
 
-        <a href="https://github.com/FalseHonesty" target="_blank" class="centered">GitHub Profile</a>
-        <a href="https://www.hackerrank.com/gjsalyer1795" target="_blank" class="centered">HackerRank Profile</a>
-    </div>
-</section>
+            <img src="https://www.fgcu.edu/_resources/images/logo-blue@2x.png" alt="FGCU Logo" />
+
+            <h3 class="subtitle">Accomplishments</h3>
+
+            <ul class="list">
+                <li>FGCU President's List Fall 2018</li>
+                <li>Perfect Score on High School Biology EOC</li>
+                <li>2nd Place at City of Palms Model United Nations Conference</li>
+            </ul>
+
+            <h3 class="subtitle">Computer Science Classes I Have Taken</h3>
+
+            <ul class="list">
+                <li>Intro to Computer Science (COP 1500)</li>
+            </ul>
+        </div>
+
+        <div id="projects" class="page">
+          <h1 class="header">Projects</h1>
+
+          <h3 class="subtitle">My Favorite Projects</h3>
+
+          <a href="https://github.com/FalseHonesty/AoC2018" target="_blank" class="centered">Advent of Code 2018 Solutions</a>
+          <a href="https://github.com/FalseHonesty/HackerRank" target="_blank" class="centered">HackerRank Solutions</a>
+
+          <h3 class="subtitle">My Profiles</h3>
+
+          <a href="https://github.com/FalseHonesty" target="_blank" class="centered">GitHub Profile</a>
+          <a href="https://www.hackerrank.com/gjsalyer1795" target="_blank" class="centered">HackerRank Profile</a>
+
+          <br>
+          <br>
+          <hr>
+
+          <div id="caesar">
+
+            <h1>Caesar Cipher</h1>
+
+            <p>Left Shift:</p>
+
+            <input id="shift" type="number" value="3">
+
+            <br>
+            <br>
+
+            <p>Input:</p>
+            <input id="in">
+
+            <br>
+            <br>
+
+            <button type="button" onclick="shift()">Submit</button>
+
+            <p id="out"></p>
+          </div>
+        </div>
+    </section>
 </body>
+
 </html>
